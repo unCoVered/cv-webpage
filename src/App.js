@@ -6,10 +6,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        
         <div class="jumbotron text-center">
           <h1>My First Bootstrap Page</h1>
           <p>Resize this responsive page to see the effect!</p>
         </div>
+        
         <div class="container">
           <div class="row">
             <div class="col-sm-4">
@@ -29,6 +31,12 @@ class App extends Component {
             </div>
           </div>
         </div>
+
+
+        <footer class="w3-container w3-teal w3-center w3-margin-top">
+          <p>Social media</p>
+          <p>Alejandro Gálvez</p>
+        </footer>
       </div>
     );
   }
