@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import App2 from './App2';
-import App3 from './App3';
+
+import NavBar from './components/NavBar';
+import Container from './components/Container';
+
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<App2 />, document.getElementById('root2'));
-ReactDOM.render(<App3 />, document.getElementById('root3'));
+ReactDOM.render(<NavBar />, document.getElementById("navbar"))
+ReactDOM.render(<Container />, document.getElementById("container"))
+
 registerServiceWorker();
