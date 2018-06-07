@@ -141,3 +141,24 @@ gulp.task('serveprod', function() {
     livereload: false
   });
 });
+
+gulp.task('sass', function() {
+  var stream = gulp.src(paths.sitesass + '/**/*.scss')
+    .pipe($.sass())
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest(paths.sitecss))
+    .pipe($.connect.reload());
+
+  return stream; // return stream to notify us of completion
+});
+
+gulp.task('cssmin', ['sass'], function() {
+  var stream = gulp.src(paths.sitecss + '/*.css')
+    .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(gulp.dest(paths.sitecss));
+
+  return stream; // return stream to notify us of completion
+});
