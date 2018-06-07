@@ -39,6 +39,7 @@
     },
     "scripts": {
         "start": "node node_modules/gulp/bin/gulp serveprod",
-        "postinstall": "gulp default"
+        "postinstall": "gulp default",
+        "serverprod": "gulp serverprod"
     }
 }
