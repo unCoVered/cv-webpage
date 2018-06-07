@@ -39,5 +39,9 @@
     },
     "scripts": {
         "serveprod": "echo \"PORT is $PORT\" && gulp serveprod"
-    }
+    },
+    "engines": {
+        "node": "8.9.0",
+        "npm": "6.1.0"
+      }
 }
