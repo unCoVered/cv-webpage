@@ -134,14 +134,6 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
-gulp.task('serveprod', function() {
-  connect.server({
-    root: ["./"],
-    port: process.env.PORT || 3000, // localhost:5000
-    livereload: false
-  });
-});
-
 gulp.task('sass', function() {
   var stream = gulp.src(paths.sitesass + '/**/*.scss')
     .pipe($.sass())
@@ -162,3 +154,12 @@ gulp.task('cssmin', ['sass'], function() {
 
   return stream; // return stream to notify us of completion
 });
+
+gulp.task('serveprod', function() {
+  connect.server({
+    root: ["./"],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
