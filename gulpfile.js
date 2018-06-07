@@ -148,7 +148,7 @@ gulp.task('serveprod', function () {
   var port = process.env.PORT || 5000
   console.log(port);
   connect.server({
-    root: ["./"],
+    root: ".",
     port: port,
     livereload: false
   });
