@@ -156,9 +156,11 @@ gulp.task('cssmin', ['sass'], function() {
 });
 
 gulp.task('serveprod', function() {
+  var port = process.env.PORT || 5000
+  console.log(port);
   connect.server({
     root: ["./"],
-    port: process.env.PORT || 5000, // localhost:5000
+    port: port, // localhost:5000
     livereload: false
   });
 });
