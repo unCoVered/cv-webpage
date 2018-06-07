@@ -38,6 +38,6 @@
         "browser-sync": "^2.24.4"
     },
     "scripts": {
-        "serveprod": "gulp serveprod"
+        "serveprod": "PORT=5000 gulp serveprod"
     }
 }
