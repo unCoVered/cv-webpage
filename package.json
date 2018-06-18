@@ -35,6 +35,9 @@
         "marked": "^0.4.0",
         "browser-sync": "^2.24.4"
     },
+    "devDependencies": {
+
+    },
     "scripts": {
         "serveprod": "gulp serveprod"
     },
