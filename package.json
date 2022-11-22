@@ -13,7 +13,7 @@
     ],
     "dependencies": {
         "bootstrap": "4.1.1",
-        "browser-sync": "^2.24.4",
+        "browser-sync": "^2.27.10",
         "devicons": "^1.8.0",
         "gulp": "^3.9.1",
         "gulp-autoprefixer": "^5.0.0",
